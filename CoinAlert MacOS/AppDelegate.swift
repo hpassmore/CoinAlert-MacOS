@@ -38,9 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             if let httpResponse = response as? HTTPURLResponse {
                 let statusCode = httpResponse.statusCode
                 
-                // We're expecting a 200 response. Anything else is bad.
                 if (statusCode == 200) {
-                    // Do catch because deserialization...
                     do{
                         let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments)
                         if let json = json as? [String: Any] {
@@ -48,10 +46,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         }
                         
                     }catch {
-                        print("Error with Json: \(error)")
+                        //This means the JSON did not deserialize properly
+                        print("Error Deserializing Json.")
+                        print("\(error)")
                     }
+                } else {
+                    print("Server returned \(statusCode). Resetting value.")
+                    self.statusItem.title = "$..."
                 }
             } else {
+                print("Unexpected error")
+                self.statusItem.title = "$..."
             }
         }
         
