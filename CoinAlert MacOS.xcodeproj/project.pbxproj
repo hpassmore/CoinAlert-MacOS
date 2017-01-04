@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		89C5BC2B1E1C204600A0BA76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C5BC2A1E1C204600A0BA76 /* AppDelegate.swift */; };
-		89C5BC2D1E1C204600A0BA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C5BC2C1E1C204600A0BA76 /* Assets.xcassets */; };
 		89C5BC301E1C204600A0BA76 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C5BC2E1E1C204600A0BA76 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89C5BC271E1C204600A0BA76 /* CoinAlert MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoinAlert MacOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C5BC2A1E1C204600A0BA76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89C5BC2C1E1C204600A0BA76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89C5BC2F1E1C204600A0BA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		89C5BC311E1C204600A0BA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				89C5BC2A1E1C204600A0BA76 /* AppDelegate.swift */,
-				89C5BC2C1E1C204600A0BA76 /* Assets.xcassets */,
 				89C5BC2E1E1C204600A0BA76 /* MainMenu.xib */,
 				89C5BC311E1C204600A0BA76 /* Info.plist */,
 			);
@@ -117,7 +114,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C5BC2D1E1C204600A0BA76 /* Assets.xcassets in Resources */,
 				89C5BC301E1C204600A0BA76 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
