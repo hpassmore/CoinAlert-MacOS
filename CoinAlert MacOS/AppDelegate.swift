@@ -4,8 +4,7 @@
 //
 //  Created by Howard Passmore on 1/3/17.
 //
-//  Updated by Chris Brooks on 1/4/2017
-//
+
 
 import Cocoa
 
