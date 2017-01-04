@@ -10,6 +10,7 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    @IBOutlet weak var look: NSMenuItem!
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     @IBOutlet weak var statusMenu: NSMenu!
     weak var timer: Timer?
@@ -22,10 +23,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.title = "$..."
         statusItem.menu = statusMenu
         startTimer()
-    }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
     
     func updatePrice() {
@@ -59,9 +56,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 30.0, repeats: true) { [weak self] _ in
-            self?.updatePrice()
-        }
+        timer = Timer.scheduledTimer(timeInterval: 30.0, target: self, selector: #selector(updatePrice), userInfo: nil, repeats: true)
+        timer?.fire()
     }
 }
 
