@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
@@ -20,6 +20,12 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="7rZ-hl-dbs">
             <items>
+                <menuItem title="Refresh now" id="b05-jv-VKW">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="refreshClicked:" target="Voe-Tx-rLC" id="gWv-JW-gGp"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Quit CoinAlert" id="GNu-fN-BRG">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -27,6 +33,7 @@
                     </connections>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="-252" y="86"/>
         </menu>
     </objects>
 </document>

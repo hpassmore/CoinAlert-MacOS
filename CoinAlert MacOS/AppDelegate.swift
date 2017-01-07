@@ -24,6 +24,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApplication.shared().terminate(self)
     }
     
+    @IBAction func refreshClicked(_ sender: Any) {
+        updatePrice()
+    }
+    
     // called when the application finishes launching. Populate our status menu and start the update timer.
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem.title = "$..."
